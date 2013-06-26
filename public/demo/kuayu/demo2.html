@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域demo</title>
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script type="text/javascript">document.domain = "xitao.com";</script>
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+	<iframe style="width:100%" src="http://other.xitao.com/demo/kuayu/request.html">
+		
+
+	</iframe>
+	<div id='frame-content'></div>
+	<script type="text/javascript">
+		window.onload = function(){
+			var iFrame = document.getElementsByTagName("iframe")[0];
+			document.getElementById('frame-content').innerHTML = iFrame.contentWindow.document.body.innerHTML;
+		}
+	</script>
+</body>
+</html>

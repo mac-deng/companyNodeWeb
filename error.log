@@ -1,0 +1,172 @@
+﻿ReferenceError: e:\mypoject\xitaoued\views\index.ejs:2
+    1| <div class="span6 spanleft">
+ >> 2| <%- partial('source',{posts:posts}) %> 
+    3| 
+    4| </div>
+    5| <div class="span3">
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:90)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:7:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:11:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:11:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:11:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:11:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:11:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:11:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:10:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:10:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:10:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:10:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:10:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "javascript"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:10:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "ifr_status"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:9:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "ifr_status"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:9:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)

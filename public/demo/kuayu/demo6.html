@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域demo</title>
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $.ajax({
+            type: 'get',
+            url: 'http://other.xitao.com/request/jsonp',
+            dataType: 'jsonp',
+            success: function(msg){
+              alert(msg.content)
+            }
+        })
+    </script>
+</script>
+</body>
+</html>

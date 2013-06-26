@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域demo</title>
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+	<div>postmessagedemo1</div>
+	<script type="text/javascript">
+		var onmessage = function(e) { 
+	       var data = e.data;
+	       alert(data);
+	       //发送
+		   var ifr = window.parent;
+		   ifr.postMessage('i am postmessagedemo1','*');
+ 
+	    }; 
+	    //监听postMessage消息事件 
+	    if (typeof window.addEventListener != 'undefined') { 
+	      window.addEventListener('message', onmessage, false); 
+	    } else if (typeof window.attachEvent != 'undefined') { 
+	      window.attachEvent('onmessage', onmessage); 
+	    } 
+
+	</script>
+</body>
+</html>

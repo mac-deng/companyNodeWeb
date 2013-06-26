@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域demo</title>
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+	<div id="demo-message"></div>
+    <iframe src="http://other.xitao.com/demo/kuayu/postmessagedemo1.html"></iframe>
+    <script type="text/javascript">
+        window.onload = function(){
+            var iFrame = document.getElementsByTagName("iframe")[0].contentWindow;
+            iFrame.postMessage('i am demo5','http://other.xitao.com');//第一个参数即你要发送的数据，第二个参数是非常重要，主要是出于安全的考虑，一般填写允许通信的域名
+
+            var onmessage = function(e) { 
+               var data = e.data;
+               alert(data);
+            };  
+            //监听postMessage消息事件 
+            if (typeof window.addEventListener != 'undefined') { 
+              window.addEventListener('message', onmessage, false); 
+            } else if (typeof window.attachEvent != 'undefined') { 
+              window.attachEvent('onmessage', onmessage); 
+            } 
+        }
+    </script>
+</script>
+</body>
+</html>

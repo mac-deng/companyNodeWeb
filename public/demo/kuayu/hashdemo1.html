@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域demo</title>
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+	<div>hashdemo1</div>
+	<script type="text/javascript">
+		window.onload=function(){
+			setInterval(function(){
+				var hash = location.hash;
+				if(!!hash && hash != "#"){
+					location.hash = '';
+					alert('demo3 message :'+hash.substring(1));
+					var Iframe = document.createElement("iframe");
+					Iframe.src =  "http://www.xitao.com/demo/kuayu/hashdemo2.html#" + 'i am hashdemo2';
+					document.body.appendChild(Iframe);	
+				}
+			},50)
+		}
+	</script>
+</body>
+</html>

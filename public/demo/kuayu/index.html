@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<title>Your deck.js Presentation</title>
+	
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="../../deck.js/core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="../../deck.js/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../../deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../../deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../../deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../../deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="../../deck.js/extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="../../deck.js/themes/style/web-2.0.css">
+	<!-- web-2.0皮肤 -->
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<!-- <link rel="stylesheet" href="../../deck.js/themes/transition/horizontal-slide.css"> -->
+	<!-- 滑动效果 -->
+	<link rel="stylesheet" href="../../deck.js/themes/transition/fade.css">
+	<!-- 渐隐渐现效果 -->
+	<style type="text/css">
+		body{
+			font-family: "微软雅黑", "tahoma", arial;
+			color: #444;
+			line-height: 1.25;
+			background: url(data:image/png;base64,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) repeat fixed white;
+		}
+	</style>
+	<!-- Required Modernizr file -->
+	<script src="../../deck.js/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section class="slide">
+	<h1>跨域那些事</h1>
+</section>
+<section class="slide deck-current">
+	<h2>讨论什么？</h2>
+	<ul>
+		<li>
+			<h3>我们不神化跨域方法，跨域没有完美</h3>
+		</li>
+		<li>
+			<h3>我们不罗列跨域方法，不讲n大跨域方法</h3>
+		</li>
+		<li>
+			<h3>我们解决工作遇见的跨域问题</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>这是个古老而又常见的话题</h2>
+	<h3>为什么要跨域呢？</h3>
+	<ul>
+		<li>
+			<h3>我要自适应高度</h3>
+		</li>
+		<li>
+			<h3>我要实现多域名单点登录</h3>
+		</li>
+		<li>
+			<h3>我要和第三方网站通信</h3>
+		</li>
+		<li>
+			<h3>我要跨域种cookie</h3>
+		</li>
+		<li>
+			<h3>......</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>这是个古老而又常见的话题</h2>
+	<h3>什么情况是跨域？</h3>
+	<ul>
+		<li>
+			<h3>子域名不同</h3>
+		</li>
+		<li>
+			<h3>主域名不同</h3>
+		</li>
+		<li>
+			<h3>协议不同</h3>
+		</li>
+		<li>
+			<h3>端口不同</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>一些常用的方法</h2>
+	<ul>
+		<li>
+			<h3>document.domain</h3>
+		</li>
+		<li>
+			<h3>location.hash</h3>
+		</li>
+		<li>
+			<h3>window.name</h3>
+		</li>
+		<li>
+			<h3>postMessage</h3>
+		</li>
+		<li>
+			<h3>jsonp</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>iframe操作</h2>
+	<ul>
+		<li>
+			<h3>父窗口获取子窗口的window对象方法</h3>
+			<pre><code>Iframe.contentWindow</code></pre>
+		</li>
+		<li>
+			<h3>父窗口获取子窗口document对象方法</h3>
+			<pre><code>iframe.contentWindow.document || iframe.contentDocument</code></pre>
+		</li>
+		<li>
+			<h3>子窗口获取父窗口window对象</h3>
+			<pre><code>parent</code></pre>
+		</li>
+		<li>
+			<h3>iframe父窗口和子窗口通信符合同源策略</h3>
+			<p>即同域名下才可以进行window和dom操作</p>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>Iframe之间操作window对象</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demo.html</h3>
+			<pre>
+<code>&lt;iframe style="width:100%" src="http://www.xitao.com/demo/kuayu/demoiframe.html"&gt;&lt;/iframe&gt;
+&lt;div id='frame-content'&gt;&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+	window.onload = function(){
+		var iFrame = document.getElementsByTagName("iframe")[0];
+		document.getElementById('frame-content').innerHTML = "iframe的链接是："+iFrame.contentWindow.location.href;
+	}
+&lt;/script&gt;</code></pre>
+		</li>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demoiframe.html</h3>
+			<pre><code>document.body.innerHTML = "父页面的链接是："+parent.location.href;</code></pre>
+		</li>
+		<li>
+			<h3><a target="_blank" href="http://www.xitao.com/demo/kuayu/demo.html">查看demo</a></h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>document.domain</h2>
+	<h3>原理：</h3>
+	<ul>
+		<li><h3>化跨域通信问题为frame之间的跨域操作</h3></li>
+		<li><h3>两个不同子域名通过设置 document.domain='主域名' 获取操作对方的跨域权限</h3></li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>document.domain跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demo1.html</h3>
+<pre><code>document.domain = 'xitao.com';
+var iFrame = document.getElementsByTagName("iframe")[0];
+document.getElementById('frame-content').innerHTML = "iframe的链接是："+iFrame.contentWindow.location.href;
+</code></pre>
+		</li>
+		<li>
+			<h3>http://other.xitao.com/demo/kuayu/request.html</h3>
+			<pre><code>document.domain = 'xitao.com';</code></pre>
+		</li>
+		<li>
+			<h3><a target="_blank" href="http://www.xitao.com/demo/kuayu/demo2.html">查看demo</a></h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>优点</h2>
+	<ul>
+		<li>
+			<h3>子域名双向跨域</h3>
+		</li>
+		<li>
+			<h3>post/get皆可</h3>
+		</li>
+		<li>
+			<h3>跟本域操作无区别</h3>
+		</li>
+	</ul>
+	<h2>缺点</h2>
+	<ul>
+		<li>
+			<h3>安全！！！</h3>
+		</li>
+		<li>
+			<h3>不能跨主域名</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>location.hash</h2>
+	<h3>原理：</h3>
+	<ul>
+		<li><h3>hash指的是url中#之后的部分，跨域时通过iframe.src设置，子窗口通过location.hash取到</h3></li>
+		<li><h3>设置url的hash不需要页面跳转，而是当前页面锚点跳转</h3></li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>location.hash跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demo3.html</h3>
+<pre><code>&lt;iframe style="width:100%" src="http://other.xitao.com/demo/kuayu/hashdemo1.html"&gt;&lt;/iframe&gt;
+&lt;div id="demo-message">&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+	window.onload=function(){
+		document.getElementsByTagName('iframe')[0].src = 'http://other.xitao.com/demo/kuayu/hashdemo1.html#'+'i am demo3';
+	}
+&lt;/script&gt;
+</code></pre>
+		</li>
+		<li>
+			<h3>http://other.xitao.com/demo/kuayu/hashdemo1.html</h3>
+			<pre><code>
+window.onload=function(){
+	setInterval(function(){//监听参数变化
+		var hash = location.hash;
+		if(!!hash && hash != "#"){
+			location.hash = '';
+			alert('demo3 message :'+hash.substring(1));//获得数据
+			var Iframe = document.createElement("iframe");
+			Iframe.src =  "http://www.xitao.com/demo/kuayu/hashdemo2.html#" + 'i am hashdemo2';
+			document.body.appendChild(Iframe);	
+		}
+	},50)
+}
+</code></pre>
+		</li>
+		
+	</ul>
+</section>
+<section class="slide">
+	<h2>location.hash跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/hashdemo2.html</h3>
+<pre><code>var hash = location.hash.substr(1);
+parent.parent.document.getElementById('demo-message').innerHTML = 'hashdemo1 message :' + hash;
+</code></pre>
+		</li>
+		<li>
+			<h3><a target="_blank" href="http://www.xitao.com/demo/kuayu/demo3.html">查看demo</a></h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>优点</h2>
+	<ul>
+		<li>
+			<h3>可跨主域名</h3>
+		</li>
+		<li>
+			<h3>操作简单</h3>
+		</li>
+		<li>
+			<h3>可以双向跨域</h3>
+		</li>
+	</ul>
+	<h2>缺点</h2>
+	<ul>
+		<li>
+			<h3>产生浏览器历史记录</h3>
+		</li>
+		<li>
+			<h3>受URL长度限制</h3>
+		</li>
+	</ul>
+</section>
+
+<section class="slide">
+	<h2>window.name</h2>
+	<h3>原理：</h3>
+	<ul>
+		<li><h3>window.name属性可以在不同域下访问，当iframe的url改变也不改变name的值</h3></li>
+		<li><h3>页面建立setTimeout/setInterval监听window.name变化</h3></li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>location.hash跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demo4.html</h3>
+<pre><code>
+var state = 0, 
+iframe = document.createElement('iframe'),
+loadfn = function() {
+    if (state === 1) {
+        var data = iframe.contentWindow.name;    // 读取数据
+        alert(data);    //弹出数据
+        iframe.contentWindow.document.write('');
+	    iframe.contentWindow.close();
+	    document.body.removeChild(iframe);
+    } else if (state === 0) {
+        state = 1;
+        iframe.contentWindow.location = "http://www.xitao.com/demo/kuayu/proxy.html";    // 设置的代理文件
+    }  
+};
+iframe.src = 'http://other.xitao.com/demo/kuayu/namedemo1.html';
+if (iframe.attachEvent) {
+    iframe.attachEvent('onload', loadfn);
+} else {
+    iframe.onload  = loadfn;
+}
+document.body.appendChild(iframe);
+</code></pre>
+		</li>
+
+		
+	</ul>
+</section>
+<section class="slide">
+	<h2>location.hash跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://other.xitao.com/demo/kuayu/namedemo1.html</h3>
+			<pre><code>window.name = "i am namedemo1";</code></pre>
+		</li>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/proxy.html</h3>
+			<p>此为代理页面，不需要代码</p>
+		</li>
+		<li>
+			<h3><a target="_blank" href="http://www.xitao.com/demo/kuayu/demo4.html">查看demo</a></h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>优点</h2>
+	<ul>
+		<li>
+			<h3>可跨主域名</h3>
+		</li>
+		<li>
+			<h3>操作简单</h3>
+		</li>
+		<li>
+			<h3>可以双向跨域</h3>
+		</li>
+	</ul>
+	<h2>缺点</h2>
+	<ul>
+		<li>
+			<h3>通信数据量不大</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>postMessage</h2>
+	<h3>原理：</h3>
+	<ul>
+		<li><h3>html5新增的postMessage方法，通过postMessage来传递信息，对方可以通过监听message事件来监听信息</h3></li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>postMessage浏览器支持情况</h2>
+	<img src="/img/kuayu/pic1.png" alt="postMessage 支持情况" title="postMessage 支持情况">
+</section>
+<section class="slide">
+	<h2>PostMessage跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demo5.html</h3>
+<pre><code>window.onload = function(){
+var iFrame = document.getElementsByTagName("iframe")[0].contentWindow;
+iFrame.postMessage('i am demo5','http://other.xitao.com');//第一个参数即你要发送的数据，第二个参数是非常重要，主要是出于安全的考虑，一般填写允许通信的域名
+
+var onmessage = function(e) { 
+   var data = e.data;
+   alert(data);
+};  
+//监听postMessage消息事件 
+if (typeof window.addEventListener != 'undefined') { 
+  window.addEventListener('message', onmessage, false); 
+} else if (typeof window.attachEvent != 'undefined') { 
+  window.attachEvent('onmessage', onmessage); 
+} 
+}</code></pre>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>PostMessage跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://other.xitao.com/demo/kuayu/postmessagedemo1.html</h3>
+<pre><code>var onmessage = function(e) { 
+var data = e.data;
+alert(data);
+//发送
+var ifr = window.parent;
+ifr.postMessage('i am postmessagedemo1','*');
+
+}; 
+//监听postMessage消息事件 
+if (typeof window.addEventListener != 'undefined') { 
+	window.addEventListener('message', onmessage, false); 
+} else if (typeof window.attachEvent != 'undefined') { 
+	window.attachEvent('onmessage', onmessage); 
+} 
+</code></pre>
+		</li>
+		<li>
+			<h3><a target="_blank" href="http://www.xitao.com/demo/kuayu/demo5.html">查看demo</a></h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>优点</h2>
+	<ul>
+		<li>
+			<h3>Html5原生支持</h3>
+		</li>
+		<li>
+			<h3>可跨主域名</h3>
+		</li>
+		<li>
+			<h3>可以双向跨域</h3>
+		</li>
+		<li>
+			<h3>可控制跨域域名</h3>
+		</li>
+	</ul>
+	<h2>缺点</h2>
+	<ul>
+		<li>
+			<h3>需要浏览器支持html5</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>jsonp</h2>
+	<h3>原理：</h3>
+	<ul>
+		<li><h3>加载一段脚本文件，来执行页面中已定义的一个函数。</h3></li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>jsonp跨域实例</h2>
+	<ul>
+		<li>
+			<h3>http://www.xitao.com/demo/kuayu/demo6.html</h3>
+<pre><code>$.ajax({
+    type: 'get',
+    url: 'http://www.xitao.com/request/jsonp',
+    dataType: 'jsonp',
+    success: function(msg){
+      alert(msg.content)
+    }
+})</code></pre>
+		</li>
+		<li>
+			<h3><a target="_blank" href="http://www.xitao.com/demo/kuayu/demo6.html">查看demo</a></h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>优点</h2>
+	<ul>
+		<li>
+			<h3>可跨主域名</h3>
+		</li>
+		<li>
+			<h3>可以双向跨域</h3>
+		</li>
+	</ul>
+	<h2>缺点</h2>
+	<ul>
+		<li>
+			<h3>不安全！！！</h3>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h2>其他跨域解决方法</h2>
+	<ul>
+		<li>
+			<h3>flash</h3>
+			<p>利用flash的URLLoader，也可以轻松实现跨域数据交互</p>
+			<p>只要站点B的跨域策略文件(crossdomain.xml)中包含了站点A</p>
+			<p>Flash提供ExternalInterface接口与JavaScript通信，ExternalInterface有两个方法，call和addCallback，call的作用是让Flash调用js里的方法，addCallback是用来注册flash函数让js调用</p>
+			<p>缺点：需要浏览器flash插件、开发成本大</p>
+		</li>
+		<li>
+			<h3>后端代理</h3>
+			<p>跨域时，前端浏览器向同一域名下的proxy发出请求，要求获取其它域名下的数据（这个请求不跨域），后端再据此对指定地址发出跨域请求（后端curl不受跨域限制），收到响应后后端把响应体重新包装、返回给前端。</p>
+		</li>
+		<li>
+			<h3>跨域资源共享（CORS）</h3>
+			<p>与普通AJAX相同，需后端设置Access-Control-Allow-Origin头，而且低版本IE不支持，<a target="_blank" href="http://blog.csdn.net/hfahe/article/details/7730944">参考文献</a>。</p>
+		</li>
+	</ul>
+</section>
+<section class="slide">
+	<h1>Q & A<br>Thanks</h1>
+	<h1></h1>
+</section>
+
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="../../deck.js/jquery-1.7.2.min.js"></script>
+<script src="../../deck.js/core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="../../deck.js/core/deck.core.js"></script>
+<script src="../../deck.js/extensions/hash/deck.hash.js"></script>
+<script src="../../deck.js/extensions/menu/deck.menu.js"></script>
+<script src="../../deck.js/extensions/goto/deck.goto.js"></script>
+<script src="../../deck.js/extensions/status/deck.status.js"></script>
+<script src="../../deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src="../../deck.js/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<section class="main">
+	<article>
+		<h2>文件规范</h2>
+		<div class="description">
+			Javascript代码应以单独.js文件的形式存储和输出。
+		</div>
+		<div class="description">
+			Javascript代码不应该直接嵌入HTML文件，除非此代码在一次性的会话中用到。在HTML中使用JS代码会增加页面的体积，并无法使用缓存和压缩机制。
+		</div>
+		<div class="description">
+			&lt;script src=filename.js&gt;标签应放在&lt;body&gt;标签的尽可能底部。这样做可以尽可能快的使页面显示出来。没有必要使用language或者type属性。
+		</div>
+	</article>
+	<article>
+		<h2>行长度规范</h2>
+		<div class="description">
+			避免单行代码超过80个字符。如果语句不能在一行内完成，那么应该打断它。在操作符后打断，一般在分号后打断。在操作符后打断可以降低复制粘贴代码的操作导致出错的可能性。
+		</div>
+		
+	</article>
+	<article>
+		<h2>注释规范</h2>
+		<div class="description">
+			尽量为你的代码进行注释，这是非常有用的，当有人(可能是你自己)需要知道你都做了些什么。注释应该良好而整洁的编写，就想是对代码的批注。稍微带点儿幽默最好了，抱怨和沮丧就算了。
+		</div>
+		<div class="description">
+			非常重要的一点是注释应该及时更新。错误的注释可能使程序更加难以理解。
+		</div>
+		<div class="description">
+			注释应言之有物，主要说明不能立即从代码中发现的东西。不要浪费你和别人的时间在如下的注释上。
+		</div>
+		<p class="syntax">
+			i = 0;  // 把i赋值为0
+		</p>
+		<div class="description">
+			一般使用行注释。块注释用来做正规的文档和块代码注释。
+		</div>
+		<p class="syntax">
+			/*<br/>
+			 * @ 这个JS内部包含的功能<br/>
+			 * @ 作者信息<br/>
+			 */
+		</p>
+		<div class="description">
+			每个类的定义都要附带一份注释, 描述类的功能和用法。也需要说明构造器参数。
+		</div>
+		<p class="syntax">
+			/*<br/>
+			 * 函数的功能描述<br/>
+			 * @param {string} 参数的的类型<br/>
+			 * @return {string} 返回的类型<br/>
+			 */
+		</p>
+	</article>
+	<article>
+		<h2>变量声明规范</h2>
+		<div class="description">
+			所有的变量应该在使用前声明。Javascript语言并不要求这样做，但是这样做可以使代码易于阅读，并且易于检查出未被声明的变量或许这些变量已经是全局变量。
+		</div>
+		<div class="description">
+			var 语句应该永远是函数体的第一个语句。
+		</div>
+		<div class="description">
+			每个变量声明语句在最好在单独的行并进行注释。这些变量最好以字母表的顺序进行排序。
+		</div>
+		<p class="syntax">
+			var currentEntry; // 当前表格入口<br/>
+			var level;        // 缩进层级<br/>
+			var size;        // 表格大小<br/>
+		</p>
+	</article>
+	<article>
+		<h2>函数声明规范</h2>
+		<div class="description">
+			所有的函数应该在使用前声明。内部函数(函数内部的函数)应该用var关键字声明。这样对明确那些变量在此函数作用域有帮助。
+		</div>
+		<div class="description">
+			函数名和左括号之间不应该有空格。右括号和{之间应有一空格。函数体缩进4个空格。}与函数定义起始处对齐。
+		</div>
+		<p class="syntax">
+			function outer(c, d) {<br/>
+			    var e = c * d;<br/>
+			    function inner(a, b) {<br/>
+			        return (e * a) +b;<br/>
+			}<br/>
+				return inner(0, 1);<br/>
+			}
+		</p>
+		<div class="description">
+			这样做在代码结构非常复杂时也可以提供良好的可读性。
+		</div>
+		<div class="description">
+			如果是匿名函数，在function和(之间应有一空格。如果忽略这个空格，那么看起来这个函数的名字就是function，这样会造成误读。
+		</div>
+		<p class="syntax">
+			div.onclick = function (e) {<br/>
+			    return false;<br/>
+			};<br/>
+			that = {<br/>
+			    method: function () {<br/>
+			        return this.datum;<br/>
+			    },<br/>
+			    datum: 0<br/>
+			};
+		</p>
+		<div class="description">
+			尽量不要使用全局函数。
+		</div>
+		<div class="description">
+			立即执行的匿名函数应该用一对括号包裹起来，清楚的表明我们要使用的是函数执行的结果，而不是函数自身。
+		</div>
+	</article>
+	<article>
+		<h2>命名规范</h2>
+		<div class="description">
+			变量名应以A-Z，a-z，0-9，$(我一般用来标注是否是jquery对象)和_组成，不要在变量名里使用如\等特殊符号。
+		</div>
+		<div class="description">
+			尽量不要使用_作为变量名的起始字符，用_开始的变量暗指此变量为私有变量。
+		</div>
+		<div class="description">
+			绝大多数的变量应以小写字母开头，使用驼峰命名法。
+		</div>
+		<div class="description">
+			当一个函数只能作为构造函数被调用时(使用new关键字)，变量名应以大写字母开头。当看到一个函数以大写字母开头时，我们就知道这个函数应该以构造函数的形式调用。
+		</div>
+		<div class="description">
+			绝大多数的变量应以小写字母开头，使用驼峰命名法。
+		</div>
+		<div class="description">
+			全局变量全部大写。
+		</div>
+	</article>
+	<article>
+		<h2>语句规范</h2>
+		<h3>简单语句</h3>
+		<div class="description">
+			简单语句独占一行，并以;结尾。注意，使用赋值语句给变量赋值一个函数或者实例仍然是一个赋值语句，必须以;结尾。
+		</div>
+		<h3>复合语句</h3>
+		<div class="description">
+			复合语句是指包含在{}里的语句<br>
+			<br>
+		</div>
+		<div class="description">
+			1.	复合语句应缩进4个空格。
+		</div>
+		<div class="description">
+			2.	{应在开始复合语句的行尾。
+		</div>
+		<div class="description">
+			3.	}应独占一行，并与起始复合语句的那行头部对齐。
+		</div>
+		<div class="description">
+			4.	{}应包裹所有复合语句，即使这些复合语句只有一行。比如if或for语句，这样可以方便的添加新语句，而不意外引入bug。
+		</div>
+	</article>
+	<article>
+		<h2>空白使用规范</h2>
+		<div class="description">
+			对逻辑相关的代码块使用空白行隔开可以增强代码的可读性。
+		</div>
+		<div class="description">
+			使用空白字符的一些注意事项：
+		</div>
+		<div class="description">
+			1.	语法关键字与(应该用一个空格隔开。
+		</div>
+		<p class="syntax">
+			while (true) {
+		</p>
+		<div class="description">
+			2.	所有除. ( [之外的二元操作符应在其操作数之间插入一空白。
+		</div>
+		<div class="description">
+			3.	for语句中的循环控制部分中的;后应留一空白。
+		</div>
+		<p class="syntax">
+			for (var i = 0; I < len; i++)
+		</p>
+		<div class="description">
+			4.	,后总是跟一个空白。
+		</div>
+		<p class="syntax">
+			var a, b, c
+		</p>
+	</article>
+	<article>
+		<h2>其它规范</h2>
+		<h3>{}和[]</h3>
+		<div class="description">
+			总是用{}代替new Object()，总是用[]代替new Array()。
+		</div>
+		<div class="description">
+			当成员名为有序的数字时使用数组Array，当成员名为任意字符时使用Object来表达数据。
+		</div>
+		<h3>,操作符</h3>
+		<div class="description">
+			避免使用,操作符。以下几种情况除外：
+		</div>
+		<div class="description">
+			1.	object声明的语法。
+		</div>
+		<div class="description">
+			2.	array声明的语法。
+		</div>
+		<div class="description">
+			3.	var声明变量的语法。
+		</div>
+		<div class="description">
+			4.	参数列表。
+		</div>
+		<h3>赋值表达式</h3>
+		<div class="description">
+			避免在条件判断中进行赋值操作。
+		</div>
+		<p class="syntax">
+			if (a = b) {
+		</p>
+		<div class="description">
+			还是
+		</div>
+		<p class="syntax">
+			   if (a == b) {
+		</p>
+		<div class="description">
+			是正确的？避免使用那些不是很容易被人认为是“正确的”的代码。（尽量采用地球人的方式进行条件判断）
+		</div>
+		<h3>===和!==操作符</h3>
+		<div class="description">
+			大部分情况下，使用===和!==是更好的方法。==和!=进行了数据类型强制转换。具体来讲，不要使用==来跟布尔值判断。
+		</div>
+		<h3>++操作符</h3>
+		<div class="description">
+			注意不要在+之后再跟一个+或者++。这种方式会使人迷惑，用()包裹他们会使你的真实目的更加清楚。
+		</div>
+		<p class="syntax">
+			 total = subtotal + +myInput.value;
+		</p>
+		<div class="description">
+			写成
+		</div>
+		<p class="syntax">
+			   total = subtotal + (+myInput.value);
+		</p>
+		<div class="description">
+			更好些。这样+ +就不会被误读为++。
+		</div>
+		<h3>eval</h3>
+		<div class="description">
+			eval函数是最多被滥用的Javascript特性。避免使用它。
+		</div>
+		<h3>Function</h3>
+		<div class="description">
+			不要使用Function构造函数(即new Function)。
+		</div>
+		<div class="description">
+			每次 eval 或 Function 构造函数作用于字符串表示的源代码时，脚本引擎都需要将源代码转换成可执行代码。这是很消耗资源的操作 —— 通常比简单的函数调用慢100倍以上。
+		</div>
+		<div class="description">
+			eval 函数效率特别低，由于事先无法知晓传给 eval 的字符串中的内容，eval在其上下文中解释要处理的代码，也就是说编译器无法优化上下文，因此只能有浏览器在运行时解释代码。这对性能影响很大
+		</div>
+		<h3>setTimeout和setInterval</h3>
+		<div class="description">
+			不要在setTimeout或setInterval函数中传入字符串,因为setTimeout或setInterval与eval()类似,如果传入字符算会有一个解析的过程
+		</div>
+	</article>
+	<article>
+		<h2>杂记</h2>
+		<h3>位运算</h3>
+		<div class="description">
+			indexOf和~<br/>
+		</div>
+		<div class="description">
+			在代码中常使用String.indexOf，例如：
+		</div>
+		<p class="syntax">
+			   	'abc'.indexOf('d')===-1;<br/>
+				if('abc'.indexOf(str)!==-1){<br/>
+				//在字符串中<br/>
+				}
+		</p>
+		<div class="description">
+			我们可以这样来写
+		</div>
+		<p class="syntax">
+			   ~'abc'.indexOf('d')===0;<br/>
+				if(~'abc'.indexOf('d')){<br/>
+				//在字符串中<br/>
+				}<br/>
+				if(!~'abc'.indexOf('d')){<br/>
+				//不在字符串中<br/>
+				}
+		</p>
+		<div class="description">
+			默认值
+		</div>
+		<p class="syntax">
+			   if (!n) n = defaultValue; <br/>
+				//使用下面的代码<br/>
+				n||(n=defaultValue);<br/>
+		</p>
+		<div class="description">
+			逗号运算符
+		</div>
+		<div class="description">
+			逗号在用于赋值时，逗号操作符总会返回表达式中的最后一项 
+		</div>
+		<p class="syntax">
+			var num = (5,1,4,8,0); // num 的值为0
+		</p>
+	</article>
+	
+</section>

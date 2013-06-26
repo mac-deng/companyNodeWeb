@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跨域demo</title>
+	<link rel="stylesheet" href="/css/style.css" media="all" />
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+	<div>hashdemo2</div>
+	<script type="text/javascript">
+		var hash = location.hash.substr(1);
+		parent.parent.document.getElementById('demo-message').innerHTML = 'hashdemo1 message :' + hash;
+	</script>
+</body>
+</html>

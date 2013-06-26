@@ -1,0 +1,146 @@
+<section class="main">
+	<article>
+		<h2>编码注意事项</h2>
+		<div class="description">
+			1 CSS文件必须使用UTF-8 无BOM的方式存储！
+		</div>
+		<div class="description">
+			2 id和class命名多个单词间用”-”做为连接符，禁止使用.a1、.a2等无意义的命名，禁止使用拼音首字母命名，建议使用“功能-特征”的命名方法。所有的全局class前面加上“g-”前缀。
+		</div>
+		<div class="description">
+			3 禁止使用星号选择器。
+		</div>
+		<div class="description">
+			4 css注释中前面一个*号后面有空格，后面一个*号前面有空格。    /* comment */
+		</div>
+		<div class="description">
+			5 尽量避免使用IE滤镜、以及css表达式。
+		</div>
+		<div class="description">
+			6 通过合理的结构，尽量避免使用Hack；如需书写hack，必须考虑以后的维护和扩展。
+		</div>
+		<div class="description">
+			7 避免使用!important。
+		</div>
+		<div class="description">
+			8 推荐使用clearfix清除浮动。推荐阅读：<a target="_blank" href="http://www.iyunlu.com/view/css-xhtml/55.html">http://www.iyunlu.com/view/css-xhtml/55.html</a>
+		</div>
+		<div class="description">
+			9 css属性的书写顺序 参考：<a target="_blank" href="http://www.cssforest.org/blog/index.php?id=38">http://www.cssforest.org/blog/index.php?id=38</a>
+		</div>
+		<div class="description">
+			10 禁止随便指定z-index。
+		</div>
+		<div class="description">
+			11 视情况缩写css属性。
+		</div>
+		<div class="description">
+			12 禁止使用@import引入css文件。
+		</div>
+		<div class="description">
+			13 语义化&seo，禁止使用<br />标签格式化代码。
+		</div>
+		<div class="description">
+			14 <!-- -->里面不能出现-- 参考链接：<a target="_blank" href="http://w3help.org/zh-cn/causes/HH8001">http://w3help.org/zh-cn/causes/HH8001</a>
+		</div>
+		<div class="description">
+			15 <!DOCTYPE html>这个声明写到页面第一行，前面不能有空行或者其他代码（常见这个前面会存在对xml的声明）。 参考链接：<a target="_blank" href="http://w3help.org/zh-cn/causes/HG8001">http://w3help.org/zh-cn/causes/HG8001</a>
+		</div>
+		<div class="description">
+			16 页面禁止出现<font> width="100"这种被废弃的标签和属性。
+		</div>
+		<div class="description">
+			17 分清楚数据图片和修饰图片，图片存放到相应的文件夹。
+		</div>
+		<div class="description">
+			18 < > & 这几个符号转义后再使用。字符实体：<a target="_blank" href="http://www.w3school.com.cn/tags/html_ref_entities.html">http://www.w3school.com.cn/tags/html_ref_entities.html</a>
+		</div>
+		<div class="description">
+			19 所有标签合理的嵌套。
+		</div>
+		<div class="description">
+			20 给img加上alt属性。
+		</div>
+		<div class="description">
+			21 合理的命名图片等文件名。
+		</div>
+		<div class="description">
+			22 所有的按钮都加上title属性。
+		</div>
+	</article>
+	<article>
+		<h2>测试浏览器</h2>
+		<div class="description">
+			1）IE6                      23.91%
+		</div>
+		<div class="description">
+			2）360（安全和极速）       19.73%
+		</div>
+		<div class="description">
+			3）IE8                      12.11%
+		</div>
+		<div class="description">
+			4）chrome                9.97%
+		</div>
+		<div class="description">
+			5）IE7                      8.26%
+		</div>
+		<div class="description">
+			6）搜狗                     5.99%
+		</div>
+		<div class="description">
+			7）IE9                      4.19%
+		</div>
+		<div class="description">
+			8）firefox                  3.18%
+		</div>
+		<div class="description">
+			9）safari                   3.14%
+		</div>
+		<div class="description">
+			10）QQ                     1.05%
+		</div>
+		<div class="description">
+			浏览器下载地址 \\192.168.1.155\喜淘内部文件服务器\浏览器
+		</div>
+
+	</article>
+	<article>
+		<h2>
+			下表顺序为从上到下，从左到右：
+		</h2>	
+		<div style="padding-left:25px;text-indent:0px;" class="description">
+			 ========================<br/>
+			 display || visibility<br/>
+			 list-style : list-style-type || list-style-position || list-style-image<br/>
+			 position<br/>
+			 top || right || bottom || left<br/>
+			 z-index<br/>
+			 clear<br/>
+			 float<br/>
+			 <br/>
+			 width<br/>
+			 max-width || min-width<br/>
+			 height<br/>
+			 max-height || min-height<br/>
+			 overflow || clip<br/>
+			 margin : margin-top || margin-right || margin-bottom || margin-left<br/>
+			 padding : padding-top || padding-right || padding-bottom || padding-left<br/>
+			 outline : outline-color || outline-style || outline-width<br/>
+			 border<br/>
+			 background : background-color || background-image || background-repeat || background-attachment || background-position<br/>
+			 <br/>
+			color<br/>
+			 font : font-style || font-variant || font-weight || font-size || line-height || font-family<br/>
+			 font : caption | icon | menu | message-box | small-caption | status-bar<br/>
+			 text-overflow<br/>
+			 text-align<br/>
+			 text-indent<br/>
+			 line-height<br/>
+			 white-space<br/>
+			 vertical-align<br/>
+			 cursor
+
+		</div>
+	</article>
+</section>
