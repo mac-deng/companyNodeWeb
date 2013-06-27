@@ -11,15 +11,10 @@ var path = require('path');
 var url = require("url")
 var partials = require('express-partials');//引用模版模块
 var flash = require('connect-flash');//引入闪存模块
-var MongoStore = require('connect-mongo')(express); //数据库
 var settings = require('./setting');
 var fs = require('fs');
 var accessLogfile = fs.createWriteStream('access.log', {flags: 'a'});
 var errorLogfile = fs.createWriteStream('error.log', {flags: 'a'});
-var logentries = require('node-logentries');//启用logentries日志服务
-var log = logentries.logger({
-  token:'process.env.LOGENTRIES_TOKEN'
-});
 
 
 
@@ -38,15 +33,9 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.cookieParser()); 
-  app.use(express.session({ 
-    secret: settings.cookieSecret,
-    store: new MongoStore({ 
-      db: settings.db 
-    }) 
-  })); 
 
   app.use(function(req, res, next){
-    res.locals.success = req.flash('success');
+    /*res.locals.success = req.flash('success');
     res.locals.error = req.flash('error');
     res.locals.active = req.flash('active');
     res.locals.user = req.session.user;
@@ -54,7 +43,7 @@ app.configure(function(){
     res.locals.req = req;
     res.locals.session = req.session;
 
-    res.locals.page = req.url.match("page") ?  req.url.split("/")[2] : 0;//翻页
+    res.locals.page = req.url.match("page") ?  req.url.split("/")[2] : 0;//翻页*/
 
     next();
   });
@@ -79,10 +68,6 @@ app.use(function (err, req, res, next) {
   next(err);
 })
 
-log.info("I'm a Lumberjack and I'm OK")
-
-
-log.log("debug", {sleep:"all night", work:"all day"})
 });
 
 routes(app);//express 3.0 路由器兼容
