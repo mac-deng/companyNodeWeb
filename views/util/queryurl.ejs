@@ -1,0 +1,68 @@
+<section class="main">
+	<article>
+		<h1>XT.util.queryurl</h1>
+		<div class="description">
+			用于获得url参数。
+		</div>
+		<h2>语法</h2>
+		<p class="syntax">
+			XT.util.queryurl(url)
+		</p>
+		<h2>参数</h2>
+		<ul class="argu">
+			<li><code>url</code> {String} - 链接地址</li>
+		</ul>
+		<h2>返回</h2>
+		<div class="description">
+			返回一个 location.href 对象。
+		</div>
+		<h2>版本</h2>
+		<section class="meta">
+			<p>作者：邓伟</p>
+			<p>当前版本：0.1</p>
+			<ul class="versions">
+				<li>2013.08.01 发布</li>
+			</ul>
+		</section>
+		<h2>示例</h2>
+<div class="example">
+	<div class="eg_code">
+			<textarea cols="30" rows="5" id="egCode">
+<input class="span5 " id="demo_input" type="text" value='http://www.zhezi.com?r=drift/index&height=100&width=100'>
+<button class="btn" type="button">获取参数</button>
+
+<table id="demo_table">
+	<thead>
+		
+	</thead>
+	<tbody></tbody>
+</table>
+
+<script type="text/javascript">
+	$("button").click(function(){
+		var _params = XT.util.queryurl($("#demo_input").val()).params;
+		var _str = '<tr><th>参数</th><th>值</th></tr>';
+		for(var i in _params){
+			_str += '<tr><td>'+ i +'：</td><td>'+ _params[i] +'</td></tr>'
+		}
+		$("#demo_table").html(_str);
+	})
+</script>
+			</textarea>
+			<input id="codes" name="codes" value="" type="hidden">
+			<button type="submit" id="runCode">运行代码</button>
+		
+	</div>
+	<div class="eg_workout">
+		
+	</div>
+	<script type="text/javascript">
+		var runCodeBtn = $("#runCode");
+		runCodeBtn.click(function(){
+			var _val = $("#egCode").val();
+			var _workout = $(".eg_workout");
+			_workout.html(_val);
+		})
+	</script>
+</div>	</article>
+</section>

@@ -1,0 +1,123 @@
+<section class="main">
+	<article>
+		<h1>XT.util.cookie</h1>
+		<div class="description">
+			用于添加、获取、删除cookie。
+		</div>
+		<h2>语法</h2>
+		<p class="syntax">
+			XT.util.cookie.setCookie(key, value)
+		</p>
+		<div class="description">
+			设置 cookie中key的值为value。
+		</div>
+		<h2>参数</h2>
+		<ul class="argu">
+			<li><code>key</code> {String} - cookie名</li>
+			<li><code>value</code> {String} - cookie值</li>
+		</ul>
+		<h2>语法</h2>
+		<p class="syntax">
+			XT.util.cookie.getCookie(key)
+		</p>
+		<div class="description">
+			获取 cookie中名为key的值。
+		</div>
+		<h2>参数</h2>
+		<ul class="argu">
+			<li><code>key</code> {String} - cookie名</li>
+		</ul>
+		<h2>返回</h2>
+		<div class="description">
+			返回 cookie中名为key的值。
+		</div>
+		<h2>语法</h2>
+		<p class="syntax">
+			XT.util.cookie.delCookie(key)
+		</p>
+		<div class="description">
+			删除 cookie中名为key的值。
+		</div>
+		<h2>参数</h2>
+		<ul class="argu">
+			<li><code>key</code> {String} - cookie名</li>
+		</ul>
+		
+		<h2>版本</h2>
+		<section class="meta">
+			<p>作者：邓伟</p>
+			<p>当前版本：0.1</p>
+			<ul class="versions">
+				<li>2013.08.01 发布</li>
+			</ul>
+		</section>
+		<h2>示例</h2>
+<div class="example">
+	<div class="eg_code">
+			<textarea cols="30" rows="5" id="egCode">
+	<form class="bs-docs-example" id="setcookie">
+	<div class="input-append">
+	  <input class="span2" type="text" value='xitao'>
+	  <button class="btn" type="button">setcookie</button>
+	</div>
+	<span>默认设置xitao的cookie值</span>
+</form>
+<form class="bs-docs-example" id="getcookie">
+	<div class="input-append">
+	  <input class="span2" type="text" value='xitao'>
+	  <button class="btn" type="button">getcookie</button>
+	</div>
+	<span></span>
+</form>
+<form class="bs-docs-example" id="delcookie">
+	<div class="input-append">
+	  <input class="span2" type="text" value='xitao'>
+	  <button class="btn" type="button">delcookie</button>
+	</div>
+</form>
+<script type="text/javascript">
+	var $setcookieForm = $("#setcookie");
+	var $getcookieForm = $("#getcookie");
+	var $delcookieForm = $("#delcookie");
+	$setcookieForm.find("button").click(function(){
+		var _val = $(this).prev().val();
+		XT.util.cookie.setCookie("xitao",_val);
+		$getcookieForm.find("span").html('<span>已设置xitao的值为'+ _val +'</span>');
+	});
+	$getcookieForm.find("button").click(function(){
+		var _val = $(this).prev().val();
+		getCookie(_val);
+	});
+	$delcookieForm.find("button").click(function(){
+		var _val = $(this).prev().val();
+		XT.util.cookie.delCookie("xitao");
+	});
+	function getCookie(key){
+		var keyValue = XT.util.cookie.getCookie(key);
+		if(!!keyValue){
+			$getcookieForm.find("span").html('<span>xitao的值为<strong class="text-error">'+XT.util.cookie.getCookie("xitao")+'</strong></span>');
+		}else {
+			$getcookieForm.find("span").html('<span>没有名为'+key+'的cookie值</span>');
+		}
+	};
+	getCookie("xitao");
+</script>
+			</textarea>
+			<input id="codes" name="codes" value="" type="hidden">
+			<button type="submit" id="runCode">运行代码</button>
+		
+	</div>
+	<div class="eg_workout">
+		
+	</div>
+	<script type="text/javascript">
+		var runCodeBtn = $("#runCode");
+		runCodeBtn.click(function(){
+			var _val = $("#egCode").val();
+			var _workout = $(".eg_workout");
+			_workout.html(_val);
+		})
+	</script>
+</div>	</article>
+</section>
+

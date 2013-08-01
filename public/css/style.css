@@ -18,7 +18,7 @@ button,label{cursor:pointer; }
 .clearfix{zoom:1;}
 code,.syntax,.code_word{font-family:'DejaVu Sans Mono',Monaco,Consolas;}
 html{
-	background:url("/publicAPI/codes/images/bg.gif") repeat scroll 0 0 #F7F5F5;
+	
 }
 a{text-decoration: underline;color:blue;}
 body{
@@ -30,7 +30,7 @@ body{
 header{
 	text-align: left;
     z-index: 20;
-    padding: 10px;
+    padding: 0 30px;
     background: white;
     background: white -ms-linear-gradient(-90deg, white 0%, #f0f0f0 100%);
     background: white -moz-linear-gradient(-90deg, white 0%, #f0f0f0 100%);
@@ -58,6 +58,7 @@ aside{
 	vertical-align:top;
 	overflow:hidden;
 	float:left;
+	position: fixed;
 }
 aside section{
 	background-color:#fff;
@@ -114,15 +115,21 @@ header{
 	color:#A7C8E5;
 	_display:none;
 }
-.main{
+.main,.demolist{
 	display:inline;
 	width:80%;
-	float:left;
+	float:right;
 	overflow:hidden;
 	margin-bottom: 50px;
 }
+.demolist{
+	margin-bottom: 0;
+}
+.demolist a{
+	color:#212121;
+}
 /* 右侧内容部分 */
-.main article{
+.demolist article,.main article{
 	padding:0 15px 5px;
 	/* width:720px; */
 	font-size:1.2em;
@@ -132,7 +139,7 @@ header{
 	margin:10px;
 	background-color:#FFF;
 }
-.main article:nth-of-type(2){
+.demolist  article:nth-of-type(2),.main article:nth-of-type(2){
 	margin-top:20px;
 }
 article h1{
@@ -313,3 +320,28 @@ header{
 header h1,header h2{
 	*display:inline;
 }
+
+/* 函数库样式 */
+.eg_workout input{
+	width: 36em;
+	padding: 5px;
+	border: 2px solid #0259C4;
+	background: #FAFAFA;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.eg_workout button{
+	padding: 5px 10px;
+	border: 2px solid #0259C4;
+	background: #0259C4;
+	color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+/* 函数库样式 end*/

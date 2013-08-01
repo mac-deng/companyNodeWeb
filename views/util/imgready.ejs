@@ -1,0 +1,79 @@
+<section class="main">
+	<article>
+		<h1>XT.util.imgReady</h1>
+		<div class="description">
+			更快速地获取图片尺寸。
+		</div>
+		<h2>语法</h2>
+		<p class="syntax">
+			XT.util.imgReady(url, sizeready, imgonload, error);
+		</p>
+		<h2>参数</h2>
+		<ul class="argu">
+			<li><code>url</code> {String} - 图片地址</li>
+			<li><code>url</code> {Function} - 尺寸就绪</li>
+			<li><code>url</code> {Function} - 加载完毕 (可选)</li>
+			<li><code>url</code> {Function} - 加载错误 (可选)</li>
+		</ul>
+		<h2>返回</h2>
+		<div class="description">
+			返回一个 location.href 对象。
+		</div>
+		<h2>版本</h2>
+		<section class="meta">
+			<p>作者：邓伟</p>
+			<p>当前版本：0.1</p>
+			<ul class="versions">
+				<li>2013.08.01 发布</li>
+			</ul>
+		</section>
+		<h2>示例</h2>
+		<div class="example">
+			<div class="eg_code">
+				<textarea cols="30" rows="5" id="egCode">
+					<div id="demo_ready_temp"></div>
+					<div id="demo_load_temp"></div>
+					<input id="demo_input" value="http://pic.ku.duowan.com/d/1103/940/0d11036028454940_13.JPG" type="text"/>
+					<button>清缓存加载图片</button>
+					<img src="#" style="display:none;">
+					<script type="text/javascript">
+						var _img = $("img");
+						var demoReadyTemp = $("#demo_ready_temp");
+						var demoLoadTemp = $("#demo_load_temp");
+						var btn = $("button");
+
+						var Timer = function (){
+							this.startTime = (new Date()).getTime();
+						};
+						Timer.prototype.stop = function(){
+							return (new Date()).getTime() - this.startTime;
+						};
+
+						btn.click(function(){
+							var time = new Timer();
+							demoReadyTemp[0].innerHTML = 'loading......';
+							_img.add(demoLoadTemp).hide();
+							loadImg(time);
+							
+						})
+						function loadImg(time){
+							XT.util.imgReady(($("#demo_input").val()+"?"+Math.random()*Math.pow(10,10)),function(){
+								demoReadyTemp[0].innerHTML = '获取图片尺寸耗时 ' + (time.stop() / 1000) +' 秒，图片的宽度为：'+this.width+' ,图片的高度为：'+this.height;
+								_img.show().attr("src",$("#demo_input").val())
+							}, function () {
+								_img.show().attr("src",$("#demo_input").val())
+								
+								demoLoadTemp.show()[0].innerHTML = '图片onload耗时 ' + (time.stop() / 1000) +' 秒，图片的宽度为：'+this.width+' ,图片的高度为：'+this.height;
+							}, function () {
+								demoReadyTemp[0].innerHTML  = '耗时 ' + (time.stop() / 1000) +' 秒. 加载错误！';
+							})
+						}
+					</script>
+				</textarea>
+				<input id="codes" name="codes" value="" type="hidden">
+				<button type="submit" id="runCode">运行代码</button>
+			</div>
+			<div class="eg_workout"></div>
+		</div>	
+	</article>
+</section>

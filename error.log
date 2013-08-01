@@ -346,3 +346,534 @@ Error: req.flash() requires sessions
     at next (e:\mypoject\xitaoued\node_modules\express\node_modules\connect\lib\proto.js:199:15)
     at multipart (e:\mypoject\xitaoued\node_modules\express\node_modules\connect\lib\middleware\multipart.js:64:37)
     at e:\mypoject\xitaoued\node_modules\express\node_modules\connect\lib\middleware\bodyParser.js:57:9
+Error: Failed to lookup view "demo"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:12:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "utilfunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:12:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><% title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:120)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><%- title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:122)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><%- title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:122)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><%- title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:122)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><%- title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:122)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><%- title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:122)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+ReferenceError: e:\mypoject\xitaoued\views\demolayout.ejs:5
+    3| <head>
+    4|   <meta charset="UTF-8" />
+ >> 5|   <title><%- title %></title>
+    6|   <link rel="stylesheet" href="/css/style.css" media="all" />
+    7|   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
+    8|   <!--[if lt IE 9]>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:122)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at e:\mypoject\xitaoued\node_modules\express-partials\index.js:68:11
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:5)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+Error: Failed to lookup view "util/cookie"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:17:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "util/cookie"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:17:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "util/cookie"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:17:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('source',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:65)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+ReferenceError: e:\mypoject\xitaoued\views\util\cookie.ejs:3
+    1| 
+    2| 
+ >> 3| <%- partial('aside',{posts:posts}) %> 
+    4| <section class="main">
+    5| 	<article>
+    6| 		<h1>XT.util.cookie</h1>
+
+posts is not defined
+    at eval (eval at <anonymous> (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:234:12), <anonymous>:29:64)
+    at e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:239:15
+    at Object.exports.render (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:277:13)
+    at View.exports.renderFile [as engine] (e:\mypoject\xitaoued\node_modules\ejs\lib\ejs.js:303:22)
+    at View.render (e:\mypoject\xitaoued\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:503:10)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:18:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+Error: Failed to lookup view "zhezifunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:14:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "zhezifunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:14:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "zhezifunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:13:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "zhezifunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:13:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "zhezifunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:13:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "zhezifunction"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:13:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:33:10)
+Error: Failed to lookup view "widget/areaLimit"
+    at Function.app.render (e:\mypoject\xitaoued\node_modules\express\lib\application.js:492:17)
+    at ServerResponse.res.render [as partial] (e:\mypoject\xitaoued\node_modules\express\lib\response.js:721:7)
+    at ServerResponse.res.render (e:\mypoject\xitaoued\node_modules\express-partials\index.js:55:9)
+    at e:\mypoject\xitaoued\routes\index.js:19:9
+    at callbacks (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:161:37)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:135:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at param (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:132:11)
+    at pass (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (e:\mypoject\xitaoued\node_modules\express\lib\router\index.js:170:5)

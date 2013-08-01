@@ -1,0 +1,26 @@
+<section class="main">
+	<article>
+		<h1>javascript学习</h1>
+		<h2>1.使用call和 apply在javascript中调用一个函数之间的区别是什么？</h2>
+		
+		<div class="description"> 
+			apply 可以让你调用该函数的参数作为数组传递， call 需要的参数明确地列出。
+		</div>
+		<div class="description"> 
+			call 和 apply 的语法
+		</div>
+		<p class="syntax">
+				functionname.apply(thisvalue, arrayOfArgs);<br/>
+				functionname.call(thisvalue, arg1, arg2, ...);<br/>
+				function theSampleFunction(name, profession) {<br/>
+				    alert("My name is " + name + " and I am a " +profession + ".");<br/> 
+				}<br/>
+				theSampleFunction("Saurabh", "software eng");<br/>
+				theSampleFunction.apply(undefined, ["tukul", "tech lead"]);<br/>
+				theSampleFunction.call(undefined, "gablu", "mathematician");<br/>
+		</p>
+		<h2>使用apply和内置函数在数组中找到的最小和最大的值。</h2>
+	</article>
+
+	
+</section>

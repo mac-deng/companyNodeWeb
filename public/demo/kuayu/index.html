@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 
-	<title>Your deck.js Presentation</title>
+	<title>跨域那些事</title>
 	
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="../../deck.js/core/deck.core.css">
@@ -49,13 +49,7 @@
 	<h2>讨论什么？</h2>
 	<ul>
 		<li>
-			<h3>我们不神化跨域方法，跨域没有完美</h3>
-		</li>
-		<li>
-			<h3>我们不罗列跨域方法，不讲n大跨域方法</h3>
-		</li>
-		<li>
-			<h3>我们解决工作遇见的跨域问题</h3>
+			<h3>跨域没有完美，我们不罗列跨域方法，解决工作遇见的跨域问题。</h3>
 		</li>
 	</ul>
 </section>
@@ -197,9 +191,6 @@ document.getElementById('frame-content').innerHTML = "iframe的链接是："+iFr
 			<h3>子域名双向跨域</h3>
 		</li>
 		<li>
-			<h3>post/get皆可</h3>
-		</li>
-		<li>
 			<h3>跟本域操作无区别</h3>
 		</li>
 	</ul>
@@ -297,12 +288,12 @@ parent.parent.document.getElementById('demo-message').innerHTML = 'hashdemo1 mes
 	<h2>window.name</h2>
 	<h3>原理：</h3>
 	<ul>
-		<li><h3>window.name属性可以在不同域下访问，当iframe的url改变也不改变name的值</h3></li>
+		<li><h3>window.name在iframe的url改变也不改变name的值</h3></li>
 		<li><h3>页面建立setTimeout/setInterval监听window.name变化</h3></li>
 	</ul>
 </section>
 <section class="slide">
-	<h2>location.hash跨域实例</h2>
+	<h2>location.name跨域实例</h2>
 	<ul>
 		<li>
 			<h3>http://www.xitao.com/demo/kuayu/demo4.html</h3>
@@ -322,11 +313,7 @@ loadfn = function() {
     }  
 };
 iframe.src = 'http://other.xitao.com/demo/kuayu/namedemo1.html';
-if (iframe.attachEvent) {
-    iframe.attachEvent('onload', loadfn);
-} else {
-    iframe.onload  = loadfn;
-}
+iframe.onload  = loadfn;
 document.body.appendChild(iframe);
 </code></pre>
 		</li>
@@ -335,7 +322,7 @@ document.body.appendChild(iframe);
 	</ul>
 </section>
 <section class="slide">
-	<h2>location.hash跨域实例</h2>
+	<h2>location.name跨域实例</h2>
 	<ul>
 		<li>
 			<h3>http://other.xitao.com/demo/kuayu/namedemo1.html</h3>

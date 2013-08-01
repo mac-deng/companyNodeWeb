@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
-  <title><%- title %></title>
+  <title>><%- title %></title>
   <link rel="stylesheet" href="/css/style.css" media="all" />
   <link rel="stylesheet" href="/css/styles/tomorrow-night-eighties.css" media="all" />
   
@@ -27,7 +27,19 @@
   </hgroup>
 </header> 
 <%- partial('aside') %>
+<%- partial('demolist') %>
 <%- body %>
+<script type="text/javascript">
+var runCodeBtn = $("#runCode");
+runCodeBtn.click(function(){
+  var _val = $("#egCode").val();
+  var _workout = $(".eg_workout");
+
+  _workout.html(_val);
+  console.log(_val)
+})
+runCodeBtn.click();//运行demo
+</script>
 <footer>
   &copy; 2013 XITAO 前端
 </footer>

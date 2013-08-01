@@ -1,0 +1,53 @@
+<section class="main">
+	<article>
+		<h1>XT.util.queryurl</h1>
+		<div class="description">
+			用于获得url参数。
+		</div>
+		<h2>语法</h2>
+		<p class="syntax">
+			XT.util.queryurl(url)
+		</p>
+		<h2>参数</h2>
+		<ul class="argu">
+			<li><code>url</code> {String} - 链接地址</li>
+		</ul>
+		<h2>返回</h2>
+		<div class="description">
+			返回一个 location.href 对象。
+		</div>
+		<h2>版本</h2>
+		<section class="meta">
+			<p>作者：邓伟</p>
+			<p>当前版本：0.1</p>
+			<ul class="versions">
+				<li>2013.08.01 发布</li>
+			</ul>
+		</section>
+		<h2>示例</h2>
+<div class="example">
+	<div class="eg_code">
+			<textarea cols="30" rows="5" id="egCode">
+<input type="text" id="demo_textarea"></input>
+<span id="demo_num">140</span>
+<script type="text/javascript">
+	XT.widget.areaLimit("#demo_textarea", 140, "#demo_num")
+</script>
+			</textarea>
+			<input id="codes" name="codes" value="" type="hidden">
+			<button type="submit" id="runCode">运行代码</button>
+		
+	</div>
+	<div class="eg_workout">
+		
+	</div>
+	<script type="text/javascript">
+		var runCodeBtn = $("#runCode");
+		runCodeBtn.click(function(){
+			var _val = $("#egCode").val();
+			var _workout = $(".eg_workout");
+			_workout.html(_val);
+		})
+	</script>
+</div>	</article>
+</section>

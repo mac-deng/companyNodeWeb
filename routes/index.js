@@ -1,16 +1,25 @@
 var url = require("url");
-var data;
+var config = require("./../config.js");
 
 module.exports = function(app) {
   app.get('/', function(req, res) {
     res.render('index', {
-      active:'home'
+      active:'home',
+      title:config.title
     });
   });
 
   app.get('/:module', function(req, res) {
     res.render(req.params.module, {
-      active:'home'
+      active:'home',
+      title:config.title
+    });
+  });
+  app.get('/:path/:file', function(req, res) {
+    res.render(req.params.path+"/"+req.params.file, {
+      active:'工具',
+      layout:"demolayout",
+      title:config.title
     });
   });
 

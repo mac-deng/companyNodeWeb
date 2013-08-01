@@ -1,0 +1,48 @@
+<aside id="aside"> 
+  <section> 
+    <dl> 
+      <dt>前端规范</dt> 
+      <dd><a href="/">javascript</a></dd> 
+      <dd><a href="/css">css</a></dd> 
+    </dl> 
+    <dl> 
+      <dt>公司项目</dt> 
+      <dd><a href="/zhezi">折子</a></dd> 
+      <dd><a href="/tuan2">团儿网</a></dd> 
+    </dl> 
+    <dl> 
+      <dt>工具</dt> 
+      <dd><a href="/tool">工具</a></dd> 
+    </dl> 
+    <dl> 
+      <dt>学习</dt> 
+      <dd><a href="/demo/kuayu">跨域那些事</a></dd> 
+      <dd><a href="/learnjavascript">js学习</a></dd> 
+    </dl> 
+    <dl> 
+      <dt>业务功能整理</dt> 
+      <dd><a href="/util/queryurl">通用工具</a></dd> 
+    <!--   <dd><a href="/zhezifunction">折子使用</a></dd>  -->
+    </dl> 
+   <!--  <dl> 
+     <dt>util</dt> 
+     <dd><a href="?q=util.json">util.json</a></dd> 
+   </dl> 
+   <dl> 
+     <dt>swf</dt> 
+     <dd><a href="?q=swf.Clipboard">swf.Clipboard</a></dd> 
+     <dd><a href="?q=swf.FlashLoader">swf.FlashLoader</a></dd> 
+   </dl> --> 
+  </section> 
+</aside>
+<script type="text/javascript">
+	var $aside = $("#aside");
+	$(window).scroll(function(){
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop >= $("header").height()){
+			$aside.css({"position":"fixed","top":0})
+		}else{
+			$aside.css({"position":"static"})
+		}
+	})
+</script>
